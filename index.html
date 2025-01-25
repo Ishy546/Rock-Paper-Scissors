@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>RockPaperScissors</title>
-    </head>
-    <body>
-        <script src="script.js"></script>
-        <div class="header">Rock-Paper-Scissors</div>
-        <div>Please make your choice.</div>
-        <div>The first to reach 5 points wins! (Note: a draw is a loss)</div>
-
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Rock-Paper-Scissors</title>
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <div class="header">Rock-Paper-Scissors</div>
+    <div>The first to reach 5 points wins!</div>
+    <div>Please make your choice.</div>
+    <div class="txt">Current Score - You: 0, Computer: 0</div>
+    <section>
+        <button class="option" id="rock">Rock</button>
+        <button class="option" id="paper">Paper</button>
+        <button class="option" id="scissors">Scissors</button>
+    </section>
+    <div class="reset">
+        <button class="Reset">Reset</button>
+    </div>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            background-color: palegreen;
+        }
+        div {
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+        }
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 35px;
+        }
+        .reset {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .txt {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+    </style>
+</body>
 </html>
